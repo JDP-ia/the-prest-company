@@ -46,10 +46,6 @@ try {
     assert.ok(clipping, `Wordmark clipping at ${width}`);
     for (const id of ['name','email','organization','subject','message']) assert.ok(await page.locator(`label[for="${id}"]`).count());
     await page.screenshot({ path: `artifacts/screenshots/${width}.png`, fullPage: true });
-    if (process.env.CI_VISUAL_REVIEW === '1' && [390, 768, 1440].includes(width)) {
-      const review = await page.screenshot({ type: 'jpeg', quality: 45, fullPage: true });
-      console.log(`VISUAL_REVIEW_${width}=${review.toString('base64')}`);
-    }
     report.push(`${width}×${height}: no overflow; wordmark fits; screenshot captured`);
   }
   assert.deepEqual(errors, [], 'No initial browser console errors');
