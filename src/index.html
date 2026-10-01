@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b10">
+  <title>The Prest Company</title>
+  <meta name="description" content="The Prest Company LLC is a Michigan-based company developing businesses, projects, products, and original work. Government services is its first area of development.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="The Prest Company">
+  <meta property="og:title" content="The Prest Company">
+  <meta property="og:description" content="A Michigan-based company. Government services and contract management first. Construction, media, and new ventures to follow.">
+  <meta property="og:image" content="./assets/social-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The Prest Company — PREST in architectural off-white lettering against a dark violet field.">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- production-metadata -->
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="./assets/prest-display.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./contact.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#company">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="identity" href="#hero-id" aria-label="The Prest Company — back to top">THE PREST COMPANY<span class="legal-suffix"> LLC</span></a>
+    <a class="contact-link" href="#contact">CONTACT <span aria-hidden="true">↗</span></a>
+  </header>
+  <main>
+    <section class="hero wrap" id="hero-id" aria-labelledby="hero-title">
+      <div class="hero-light" aria-hidden="true"></div>
+      <h1 class="hero-title" id="hero-title">
+        <span class="wordmark-top">THE</span>
+        <span class="wordmark">PREST</span>
+        <span class="wordmark-bottom">COMPANY</span>
+      </h1>
+      <div class="hero-baseline"><span>MICHIGAN</span><a href="#company" aria-label="About The Prest Company">01 — THE COMPANY <span aria-hidden="true">↓</span></a></div>
+    </section>
+    <section class="company section-grid wrap" id="company" aria-labelledby="company-title">
+      <h2 class="eyebrow" id="company-title"><span class="index">01 /</span> THE COMPANY</h2>
+      <div class="company-copy">
+        <p class="lead">A Michigan-based company established to develop and operate businesses, projects, products, and original work across multiple disciplines.</p>
+        <p class="supporting">The company’s first area of development is government services and contract management. Construction, media, and new ventures will follow as the company develops.</p>
+      </div>
+    </section>
+    <section class="current" aria-labelledby="current-title">
+      <div class="section-grid wrap">
+        <p class="eyebrow"><span class="index">02 /</span> CURRENT</p>
+        <div class="current-content">
+          <p class="status"><span aria-hidden="true"></span> IN DEVELOPMENT</p>
+          <h2 id="current-title">GOVERNMENT<br>SERVICES</h2>
+          <p class="list-intro">Current areas being developed</p>
+          <ul class="service-list">
+            <li>Government contracting</li>
+            <li>Contract management</li>
+            <li>Project administration</li>
+            <li>Strategic partnerships</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="future section-grid wrap" aria-labelledby="future-title">
+      <h2 class="eyebrow" id="future-title"><span class="index">03 /</span> IN DEVELOPMENT</h2>
+      <ul class="future-list">
+        <li><span class="division-number" aria-hidden="true">02</span><h3>CONSTRUCTION</h3><span class="future-status">IN DEVELOPMENT</span></li>
+        <li><span class="division-number" aria-hidden="true">03</span><h3>MEDIA</h3><span class="future-status">IN DEVELOPMENT</span></li>
+        <li><span class="division-number" aria-hidden="true">04</span><h3>VENTURES</h3><span class="future-status">IN DEVELOPMENT</span></li>
+      </ul>
+    </section>
+    <section class="contact section-grid wrap" id="contact" aria-labelledby="contact-title">
+      <p class="eyebrow"><span class="index">04 /</span> CONTACT</p>
+      <div class="contact-body">
+        <h2 id="contact-title">CONTACT</h2>
+        <a class="email-link" href="mailto:theprestcompany@gmail.com">theprestcompany@gmail.com <span aria-hidden="true">↗</span></a>
+        <form id="contact-form" method="post" action="#contact" data-configured="false" aria-describedby="form-note">
+          <p class="form-note" id="form-note">The form is not accepting messages yet. Please contact us by email.</p>
+          <noscript><p class="form-note">You can always contact us at <a href="mailto:theprestcompany@gmail.com">theprestcompany@gmail.com</a>.</p></noscript>
+          <div class="form-grid">
+            <div class="field"><label for="name">NAME</label><input id="name" name="name" autocomplete="name" maxlength="120" required></div>
+            <div class="field"><label for="email">EMAIL</label><input id="email" name="email" type="email" autocomplete="email" maxlength="254" required></div>
+            <div class="field full"><label for="organization">COMPANY / ORGANIZATION <span>OPTIONAL</span></label><input id="organization" name="organization" autocomplete="organization" maxlength="200"></div>
+            <div class="field full"><label for="subject">SUBJECT</label><input id="subject" name="subject" maxlength="200" required></div>
+            <div class="field full"><label for="message">MESSAGE</label><textarea id="message" name="message" rows="4" maxlength="10000" required></textarea></div>
+          </div>
+          <div class="honeypot" aria-hidden="true"><label for="website">Leave this field empty</label><input id="website" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+          <div class="form-bottom"><p>All fields required unless marked optional.</p><button type="submit" disabled>SEND MESSAGE <span aria-hidden="true">↗</span></button></div>
+          <p id="form-status" class="form-status" role="status" aria-live="polite" aria-atomic="true" tabindex="-1"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer wrap"><span>THE PREST COMPANY LLC</span><span>Michigan</span><a href="mailto:theprestcompany@gmail.com">theprestcompany@gmail.com</a><span>© 2026</span></footer>
+</body>
+</html>
